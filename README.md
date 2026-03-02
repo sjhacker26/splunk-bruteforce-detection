@@ -36,11 +36,11 @@ In this project, authentication logs were ingested into Splunk , analyzed to det
 
 <h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
 
-Splunk Enterprise
-SPL (Splunk Processing Language)
-Python Automation Script
-CSV log Files
-GitHub
+- Splunk Enterprise
+- SPL (Splunk Processing Language)
+- Python Automation Script
+- CSV log Files
+- GitHub
 
 ---
 
@@ -58,9 +58,9 @@ The following steps were performed:
 
 <h2><a class="anchor" id="future-improvements"></a>Future improvements</h2>
 
-Real firewall integration
-Real-time log ingestion
-SOAR-based response automation
+- Real firewall integration
+- Real-time log ingestion
+- SOAR-based response automation
 
 ---
 
@@ -80,17 +80,18 @@ splunk-bruteforce-detection/
 ├── WRITEUP.md
 ├── data/                      
 │   ├── logs.csv  
-│   ├── spl_query.txt     
-│   └── output_blocklist.txt             
+│   └── spl_query.txt                 
 ├── scripts/                       # Automation scripts
 │   └──autoscript.py
-├── images/                        # imgs, screenshots 
+├── images/                        # imgs, screenshots
+├── output/
+│   └── firewall_blocklist.txt
 ├── .gitignore                
 
 ```
 <h2><a class="anchor" id="author-contact"></a>Author & Contact</h2>
 
 **Sonu Kumar**
-Email: sjhacker@gmail.com
-[LinkedIN](https:www.linkedin.com/in/sonu-kumar-00a707a8/)
+- Email: sjhacker@gmail.com
+- [LinkedIN](https:www.linkedin.com/in/sonu-kumar-00a707a8/)
 
