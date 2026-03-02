@@ -1,0 +1,7 @@
+index=kiraaa host=kira | table time, action, src_ip, user, result | sort -time   # Convert raw data into tabular form
+
+
+index=kiraaa host=kira result=failed | bin _time span=1m | stats count by _time, user, src_ip | where count >= 5     # Detection Rule
+
+
+index=kiraaa host=kira result=failed | bin _time span=1m | stats count by _time, user, src_ip | where count >= 5 | stats count by src_ip | sort - count # collecting suspicious ip 
