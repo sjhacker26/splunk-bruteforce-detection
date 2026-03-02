@@ -44,7 +44,7 @@ result
 
 were properly extracted.
 
-("D:/Sonuu/Documents/Projects/splunk-bruteforce-detection/images/logs.png")
+![logs](images/logs.png)
 
 
 ### Step 2 — Suspicious Activity Identification
@@ -56,7 +56,7 @@ SPL Query - index=kiraaa host=kira result=failed | bin _time span=1m | stats cou
 
 This represents a classic brute-force behavior.
 
-("D:/Sonuu/Documents/Projects/splunk-bruteforce-detection/images/detection.png")
+![detection](images/detection.png)
 
 This stage is called:
 
@@ -73,7 +73,7 @@ Once this threshold was met:
 
 Splunk generated an alert automatically.
 
-("D:/Sonuu/Documents/Projects/splunk-bruteforce-detection/images/alert.png")
+![alert](images/alert.png)
 
 This moved detection from passive monitoring to active response readiness.
 
@@ -103,7 +103,7 @@ The attacker IP was automatically added to:
 
 firewall_blocklist.txt
 
-("D:/Sonuu/Documents/Projects/splunk-bruteforce-detection/images/blocklist.png")
+![blocklist](images/blocklist.png)
 
 This represents:
 
@@ -123,7 +123,7 @@ Now, whenever an attacker triggers detection:
 
 Their IP appears in the dashboard.
 
-("D:/Sonuu/Documents/Projects/splunk-bruteforce-detection/images/dashboard.png")
+![dashboard](images/dashboard.png)
 
 This enables quick prioritization and monitoring.
 
